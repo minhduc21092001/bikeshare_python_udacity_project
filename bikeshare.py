@@ -85,7 +85,7 @@ def valid_display_data_check(more_data):
             print('Your previous entry is invalid, please re-enter!\n')
 
 def display_data(df):
-    """Displays 5 rows of data."""
+    """Displays 5 rows of raw data with user interaction"""
     counter = 0
     result = valid_display_data_check(False)
     if result == 'yes':
