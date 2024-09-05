@@ -275,11 +275,11 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
+        display_data(df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_data(df)
 
         restart = valid_restart_check()
         if restart != 'yes':
